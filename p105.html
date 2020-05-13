@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>p105</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<script>
+const personas = [
+{
+nombre: "pedro",
+edad: 50
+},
+{
+nombre: "ana",
+edad: 63
+},
+{
+nombre: "carlos",
+edad: 9
+},
+{
+nombre: "maría",
+edad: 42
+},
+{
+nombre: "oscar",
+edad: 26
+}
+];
+const personasmayores = personas.filter((elemento, indice, arreglo) => elemento.edad >= 18);
+for (let persona of personasmayores)
+document.write(`${persona.nombre} ${persona.edad}<br>`);
+</script>
+</body>
+
+</html>
